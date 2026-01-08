@@ -1,0 +1,6 @@
+Cluster,customers,churn_rate,avg_tenure,avg_monthly,pct_senior,churn_rate_pct,pct_senior_pct,top_Contract,top_Contract_pct,top_InternetService,top_InternetService_pct,top_PhoneService,top_PhoneService_pct,top_MultipleLines,top_MultipleLines_pct
+0,1299,0.2317167051578137,32.22,64.95,0.0,23.17,0.0,Two year,100.0,DSL,74.29,Yes,100.0,Yes,51.5
+1,2003,0.24513230154767848,31.59,63.79,0.0,24.51,0.0,Month-to-month,66.3,DSL,100.0,Yes,100.0,No,80.18
+2,2021,0.23503216229589313,32.88,63.54,0.0,23.5,0.0,Month-to-month,80.36,Fiber optic,100.0,Yes,100.0,Yes,59.43
+3,682,0.24926686217008798,31.74,42.02,0.15249266862170088,24.93,15.25,Month-to-month,52.93,DSL,55.87,No,100.0,No,61.88
+4,1038,0.4161849710982659,33.5,83.7,1.0,41.62,100.0,Month-to-month,54.14,DSL,57.61,Yes,100.0,No,57.23

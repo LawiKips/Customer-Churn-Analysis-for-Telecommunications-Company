@@ -1,0 +1,50 @@
+Cluster labels and insights (K-Means, k=5)
+
+Dataset summary
+This analysis uses 7,043 customers with K-Means clustering (k=5).
+The overall churn rate in the dataset is 26.54%. Cluster churn rates reveal one clearly high-risk segment (Cluster 4) and four segments that are close to the overall average.
+
+Cluster 0 — Long-Term Contract Loyalists (n=1,299)
+All customers in this cluster are on Two-year contracts. The churn rate is 23.17%, which is below the overall churn rate (26.54%). PhoneService is 100% “Yes”.
+InternetService is mostly DSL (74.29% DSL, 25.71% Fiber optic). MultipleLines is balanced (51.50% Yes, 48.50% No).
+The strongest distinguishing feature is contract length. Two-year commitment likely reduces churn because customers face lower switching intention or higher switching cost.
+Service mix is relatively standard and does not appear to drive churn strongly.
+This segment is stable and can be treated as a retain and grow group.
+Recommended actions include renewal planning before contract end, loyalty rewards, and gentle cross-sell/up-sell without heavy discounting.
+A practical trigger is to flag customers approaching the final months of a two-year term for proactive retention contact.
+
+Cluster 1 — DSL Month-to-Month (Single-Line) Users (n=2,003)
+InternetService is 100% DSL. Contract type is mainly Month-to-month (66.30%) and One-year (33.70%), with no Two-year contracts.
+The churn rate is 24.51%. PhoneService is 100% “Yes”. MultipleLines is mostly “No” (80.18% No, 19.82% Yes).
+This cluster seems to represent traditional DSL users with simpler setups (single line).
+Although churn is not extreme, the high share of month-to-month contracts indicates higher flexibility to leave compared with long-term contract customers.
+The key opportunity is to reduce churn risk by improving commitment and perceived value, so client can target offers to convert month-to-month customers into 12-month or 24-month contracts, plus bundle messaging that fits single-line households.
+Monitoring should focus on month-to-month users who show early dissatisfaction signals.
+
+Cluster 2 — Fiber Month-to-Month (Multi-Line) Users (n=2,021)
+InternetService is 100% Fiber optic. Contract type is heavily Month-to-month (80.36%) with One-year at 19.64% and no Two-year.
+The churn rate is 23.50% (below overall). PhoneService is 100% “Yes”. MultipleLines leans “Yes” (59.43% Yes, 40.57% No).
+This segment is clearly separated by Fiber service. Despite being mostly month-to-month, the churn rate is still below average.
+This suggests that Fiber users may perceive higher value or better performance, or the bundle structure increases stickiness.
+Business insight and action: This group should be maintained through service quality consistency and transparent pricing.
+Therefore, we can focus on value guarantee plans for month-to-month customers to reduce surprise-bill churn.
+
+Cluster 3 — No Phone Service / Lower Monthly Charge Segment (n=682)
+PhoneService is 100% “No”, making this cluster structurally different from others. The churn rate is 24.93% (near overall).
+Average monthly charges are lower (about 42.02). Contract  is more balanced compared with other clusters: 52.93% month-to-month, 23.02% one-year, and 24.05% two-year.
+InternetService is mixed (55.87% DSL, 44.13% Fiber optic). MultipleLines values still exist in the dataset, but the defining feature remains “no phone service”.
+The most likely interpretation is internet-only customers. Their spending level is lower, and churn is close to the average.
+This segment may churn due to price/value comparison, moving house, or switching to competitors’ internet-only deals.
+The main opportunity is migration into bundles that increase retention such as adding phone service.
+
+Cluster 4 — High-Risk Seniors with High Monthly Charges (n=1,038)
+SeniorCitizen is 100% in this cluster, which is unique and very strong separation. This cluster has the highest churn rate at 41.62%, which is about 15 percentage points above the overall churn rate (26.54%).
+Average monthly charges are also the highest (about 83.70). Contract is 54.14% month-to-month, 23.51% one-year, and 22.35% two-year. PhoneService is 100% “Yes”. InternetService is mixed (57.61% DSL, 42.39% Fiber optic).
+MultipleLines is 42.77% Yes and 57.23% No.
+This is the priority churn segment. The combination of being seniors and having higher monthly charges strongly suggests price sensitivity and service complexity issues.
+Even with some long-term contracts present, churn remains high, indicating that contract length alone does not fully protect this group. Seniors may require clearer plan structures, stronger support, and reduced perceived hassle.
+This segment should receive proactive retention interventions.
+
+Overall conclusion
+Cluster 4 is the key churn-risk segment and should be prioritised for retention.
+Cluster 0 is the most stable group (two-year contract loyalists). Clusters 1–3 show churn close to the overall average and can be managed with contract conversion, value messaging, and targeted bundling strategies.

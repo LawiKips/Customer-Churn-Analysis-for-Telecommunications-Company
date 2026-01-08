@@ -1,0 +1,4 @@
+Optimal number of clusters (k)
+We tested multiple k values using the Elbow Method.
+The curve shows a clear elbow around k=5, after which the improvement flattens.
+Therefore, we selected k=5 as a balance between cluster separation and model simplicity.

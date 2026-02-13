@@ -1,0 +1,41 @@
+{
+  "logreg": {
+    "accuracy": 0.71611071682044,
+    "precision": 0.4774305555555556,
+    "recall": 0.7352941176470589,
+    "roc_auc": 0.8069854555788059
+  },
+  "ann": {
+    "accuracy": 0.7877927608232789,
+    "precision": 0.631578947368421,
+    "recall": 0.48128342245989303,
+    "roc_auc": 0.8045493296132682,
+    "best_params": {
+      "model__alpha": 0.0001,
+      "model__beta_1": 0.9,
+      "model__beta_2": 0.999,
+      "model__early_stopping": true,
+      "model__hidden_layer_sizes": [
+        64
+      ],
+      "model__learning_rate_init": 0.0005,
+      "model__n_iter_no_change": 15,
+      "model__validation_fraction": 0.15
+    }
+  },
+  "torch_ann": {
+    "val": {
+      "accuracy": 0.783303730017762,
+      "precision": 0.6,
+      "recall": 0.4845360824742268,
+      "roc_auc": 0.8106508632220097
+    },
+    "test": {
+      "accuracy": 0.7906316536550745,
+      "precision": 0.6468401486988847,
+      "recall": 0.46524064171123,
+      "roc_auc": 0.8146684233640755
+    },
+    "device": "mps"
+  }
+}

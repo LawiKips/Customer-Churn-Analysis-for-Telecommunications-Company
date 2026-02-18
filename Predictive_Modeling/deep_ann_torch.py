@@ -43,7 +43,7 @@ MODEL_DIR = ROOT / "Predictive_Modeling" / "models"
 FIG_DIR = ROOT / "Predictive_Modeling" / "figures"
 SEED = 42
 
-# device selection
+# device  selection
 if torch.cuda.is_available():
     DEVICE = torch.device("cuda")
 elif getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
